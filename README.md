@@ -14,8 +14,8 @@ Disk size: the Docker image takes 1.5GiB, and you need at least another 5MiB for
 - centos
 - docker 
 - docker-compose
+- 4人游戏 至少1.5G内存
 
-4人 1.5G 内存
 客户端连接很卡:
 1. ticks 过高
 1. 服务器端使用了高刷新率地图插件
