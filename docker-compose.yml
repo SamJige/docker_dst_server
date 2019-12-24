@@ -1,0 +1,23 @@
+version: '3'
+services:
+  dst:
+   image: webhippie/dst:latest
+   ports:
+     - "20999:10999/udp"
+     - "20888:10888/udp"
+   volumes:
+     - ./data:/game/server/save
+   environment:
+    - DST_SERVER_TOKEN={token}
+    - DST_SERVER_PASSWORD={room_password}
+    - DST_CLUSTER_KEY=MsAhBOXhhnElO5IPKr5G
+
+   networks:
+     - my_dst2
+      
+networks:
+  my_dst2:
+    ipam:
+      driver: default
+      config:
+        - subnet: 192.168.232.0/24
