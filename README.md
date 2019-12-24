@@ -10,6 +10,11 @@ CPU: 1 core is somewhat enough for a small-scale server (but don't try 60 ticks,
 Memory: We recommend reserving 1GiB Memory for the server, plus 60MiB per active user.
 Disk size: the Docker image takes 1.5GiB, and you need at least another 5MiB for maps, configs and logs. 4GiB available disk space is recommended.
 
+服务器: 
+- centos
+- docker 
+- docker-compose
+
 4人 1.5G 内存
 客户端连接很卡:
 1. ticks 过高
